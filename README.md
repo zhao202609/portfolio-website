@@ -10,8 +10,8 @@ A complete, production-ready Full-Stack Personal Portfolio Website consisting of
 
 ## Live Deployed Sites
 
-- **Front-End URL:** _(add after deploying to Vercel / Netlify)_
-- **Back-End URL:** _(add after deploying to Render / Heroku)_
+- **Front-End URL (Cloudflare Pages):** https://portfolio-website-bt2.pages.dev
+- **Back-End URL (Render):** https://portfolio-website-01b2.onrender.com
 
 ---
 
@@ -21,7 +21,7 @@ A complete, production-ready Full-Stack Personal Portfolio Website consisting of
 |---------|--------------|
 | Back-end | Node.js, Express, Mongoose, MongoDB Atlas, JWT, bcryptjs, helmet, cors, dotenv |
 | Front-end | React (Vite), React Router, Context API, Axios, responsive CSS |
-| Deployment | Back-end: Render / Heroku — Front-end: Vercel / Netlify |
+| Deployment | Back-end: Render — Front-end: Cloudflare Pages |
 
 ## Project Structure
 
@@ -172,13 +172,13 @@ The site runs on `http://localhost:5173` and communicates with the API on port 5
 
 ## Deployment Summary
 
-- **Back-end:** deploy the `server` folder to Render/Heroku, set `MONGO_URI`, `JWT_SECRET` and `CLIENT_URL` environment variables, and copy the live API URL.
-- **Front-end:** deploy the `client` folder to Vercel/Netlify, set `VITE_API_URL` to the live back-end URL, then run `npm run build`.
+- **Back-end:** deploy the `server` folder to Render (Root Directory = `server`, Build `npm install`, Start `npm start`, Free instance), set `MONGO_URI`, `JWT_SECRET` and `CLIENT_URL` environment variables.
+- **Front-end:** deploy the `client` folder to Cloudflare Pages (Root Directory = `client`, Framework preset React (Vite), Build `npm run build`, Output `dist`), set `VITE_API_URL` to the live back-end URL. The `client/public/_redirects` file handles SPA routing.
 
 ## Submission Checklist (Chaoxing)
 
-- [ ] Live Front-End URL
-- [ ] Live Back-End URL
+- [x] Live Front-End URL — https://portfolio-website-bt2.pages.dev
+- [x] Live Back-End URL — https://portfolio-website-01b2.onrender.com
 - [ ] ZIP named `StudentID_StudentName_CapstoneProject.zip` containing `server` and `client`
 - [ ] All `node_modules` folders deleted/excluded before zipping
 - [ ] This `README.md` included in the zip root
