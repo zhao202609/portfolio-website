@@ -1,0 +1,194 @@
+{
+  "exportedAt": "2026-11-02T00:40:29.740Z",
+  "projects": [
+    {
+      "_id": "6ae7dbfa412d6ffe8d794f9d",
+      "title": "My First Personal Page",
+      "description": "The very first web pages I wrote in plain HTML — headings, paragraphs, lists, links and images put together into a simple personal page.",
+      "category": "HTML/CSS",
+      "tags": [
+        "HTML5",
+        "Tags",
+        "Links",
+        "Lab 1-3"
+      ],
+      "user": "6ad60dfbb54cf05a89d8e687",
+      "__v": 0,
+      "createdAt": "2026-11-02T00:40:26.513Z",
+      "updatedAt": "2026-11-02T00:40:26.513Z"
+    },
+    {
+      "_id": "6ae7dbfa412d6ffe8d794f9e",
+      "title": "Styled Portfolio with CSS",
+      "description": "I added a stylesheet to my portfolio: colours, fonts and Flexbox layout, and placed my own photo on the page.",
+      "category": "HTML/CSS",
+      "tags": [
+        "CSS3",
+        "Flexbox",
+        "Selectors",
+        "Lab 4-6"
+      ],
+      "user": "6ad60dfbb54cf05a89d8e687",
+      "__v": 0,
+      "createdAt": "2026-11-02T00:40:26.513Z",
+      "updatedAt": "2026-11-02T00:40:26.513Z"
+    },
+    {
+      "_id": "6ae7dbfa412d6ffe8d794f9f",
+      "title": "Interactive Portfolio with the DOM",
+      "description": "Using JavaScript in main.js to select elements, listen for clicks and toggle content, so the page finally responds to the user.",
+      "category": "JavaScript",
+      "tags": [
+        "JavaScript",
+        "DOM",
+        "Events",
+        "Lab 7-9"
+      ],
+      "user": "6ad60dfbb54cf05a89d8e687",
+      "__v": 0,
+      "createdAt": "2026-11-02T00:40:26.514Z",
+      "updatedAt": "2026-11-02T00:40:26.514Z"
+    },
+    {
+      "_id": "6ae7dbfa412d6ffe8d794fa0",
+      "title": "GitHub Repos Explorer",
+      "description": "I called the public GitHub API with fetch() and built project cards from the JSON data that came back.",
+      "category": "JavaScript",
+      "tags": [
+        "Fetch",
+        "REST",
+        "JSON",
+        "Lab 10"
+      ],
+      "user": "6ad60dfbb54cf05a89d8e687",
+      "__v": 0,
+      "createdAt": "2026-11-02T00:40:26.514Z",
+      "updatedAt": "2026-11-02T00:40:26.514Z"
+    },
+    {
+      "_id": "6ae7dbfa412d6ffe8d794fa1",
+      "title": "React Portfolio SPA",
+      "description": "The portfolio rebuilt in React with Vite — split into Header, About, Projects and Contact components that share data through props.",
+      "category": "React",
+      "tags": [
+        "React",
+        "Components",
+        "Vite",
+        "Lab 11-16"
+      ],
+      "user": "6ad60dfbb54cf05a89d8e687",
+      "__v": 0,
+      "createdAt": "2026-11-02T00:40:26.514Z",
+      "updatedAt": "2026-11-02T00:40:26.514Z"
+    },
+    {
+      "_id": "6ae7dbfa412d6ffe8d794fa2",
+      "title": "First Express Server & Routes",
+      "description": "My first Node.js server with Express, returning JSON from GET routes such as /api/posts instead of a fixed HTML file.",
+      "category": "Full-Stack",
+      "tags": [
+        "Node.js",
+        "Express",
+        "Routing",
+        "Lab 1-4"
+      ],
+      "user": "6ad60dfbb54cf05a89d8e687",
+      "__v": 0,
+      "createdAt": "2026-11-02T00:40:26.514Z",
+      "updatedAt": "2026-11-02T00:40:26.514Z"
+    },
+    {
+      "_id": "6ae7dbfa412d6ffe8d794fa3",
+      "title": "MongoDB CRUD API",
+      "description": "I connected to MongoDB Atlas with a connection string in .env, modelled data with Mongoose and built create, read, update and delete endpoints.",
+      "category": "Full-Stack",
+      "tags": [
+        "MongoDB",
+        "Mongoose",
+        "CRUD",
+        "dotenv",
+        "Lab 5-10"
+      ],
+      "user": "6ad60dfbb54cf05a89d8e687",
+      "__v": 0,
+      "createdAt": "2026-11-02T00:40:26.514Z",
+      "updatedAt": "2026-11-02T00:40:26.514Z"
+    },
+    {
+      "_id": "6ae7dbfa412d6ffe8d794fa4",
+      "title": "MVC Structure & User Login",
+      "description": "Code organised into models, routes and controllers, with passwords hashed by bcrypt and protected routes using a JWT token.",
+      "category": "Full-Stack",
+      "tags": [
+        "MVC",
+        "bcrypt",
+        "JWT",
+        "Middleware",
+        "Lab 11-16"
+      ],
+      "user": "6ad60dfbb54cf05a89d8e687",
+      "__v": 0,
+      "createdAt": "2026-11-02T00:40:26.514Z",
+      "updatedAt": "2026-11-02T00:40:26.514Z"
+    }
+  ],
+  "blogPosts": [
+    {
+      "_id": "6ad6b9d4157b5720864ef7e1",
+      "title": "My First REST API with Express (Lab 3–4)",
+      "content": "In Labs 3 and 4 I built my first back-end server with Node.js and Express. Before this, I had only made static web pages, so it was exciting to see the server actually reply with data.\n\nKey points I learned:\n\n1. Express is a Node.js framework. We create an application with express() and start it with app.listen(PORT).\n\n2. A route decides what happens when a request comes in. For example, app.get('/api/posts', ...) runs when someone visits that URL, and req.params.id is used to read the id from the URL on /api/posts/:id.\n\n3. The four common HTTP verbs map to simple actions: GET reads data, POST creates data, PUT updates it, and DELETE removes it. This is the basic idea behind a REST API.\n\n4. To read JSON sent by a client, the line app.use(express.json()) is required. Without it, req.body is empty. This was a small detail that caused a bug until I added it.\n\n5. We send data back with res.json(data) and set status codes such as 200 (OK) and 201 (Created).\n\nSummary\nIn these two labs I learned how a web server receives requests and returns JSON, how routes and URL parameters work, and why express.json() is needed to read the request body. This was my first step from building pages to building a real API.",
+      "author": "6ad612a2e6032adc1c2dbb06",
+      "createdAt": "2026-10-20T00:46:12.413Z",
+      "updatedAt": "2026-10-20T00:46:12.413Z",
+      "__v": 0
+    },
+    {
+      "_id": "6ad6b9d4157b5720864ef7e4",
+      "title": "Connecting to MongoDB Atlas with dotenv (Lab 5–6)",
+      "content": "In Labs 5 and 6 I moved away from hard-coded data and connected my application to a real cloud database on MongoDB Atlas.\n\nKey points I learned:\n\n1. MongoDB Atlas hosts the database online, so the data is not stored on my own computer and can be shared by the deployed application.\n\n2. We connect using a connection string and the MongoDB driver's MongoClient. The code waits for client.connect() to succeed before using the database.\n\n3. The connection string is secret, so it must not be written directly in the code. We put it in a .env file and load it with dotenv using process.env.MONGO_URI.\n\n4. My first database operations were simple: insertOne() to add a document and find() to read documents back.\n\n5. A safe practice is to connect to the database first, and only start the Express server after the connection succeeds.\n\nSummary\nThese labs taught me how to connect a Node.js app to a cloud MongoDB database, how to keep the connection string private in a .env file, and how to insert and read documents. This made the API's data persistent instead of temporary.",
+      "author": "6ad612a2e6032adc1c2dbb06",
+      "createdAt": "2026-10-20T00:46:12.712Z",
+      "updatedAt": "2026-10-20T00:46:12.712Z",
+      "__v": 0
+    },
+    {
+      "_id": "6ad6b9d4157b5720864ef7e7",
+      "title": "Building Full CRUD with MongoDB (Lab 8)",
+      "content": "In Lab 8 I completed the four CRUD operations — Create, Read, Update and Delete — for blog posts using MongoDB.\n\nKey points I learned:\n\n1. Create uses insertOne(req.body), which saves the data the client sent.\n\n2. Read uses find() for all posts and findOne() for one post. To find a single document by id, the id from the URL must be converted with new ObjectId(id).\n\n3. Update uses updateOne() with a filter and $set. The $set operator only changes the fields that are sent.\n\n4. Delete uses deleteOne(). The result fields modifiedCount and deletedCount tell us whether any document actually changed; if they are 0, the post does not exist and we return a 404 error.\n\n5. Every database operation is asynchronous, so I used async/await and wrapped the code in try/catch to return a 500 error if something goes wrong.\n\nSummary\nIn this lab I mapped the HTTP verbs to real database operations: POST inserts, GET reads, PUT updates with $set, and DELETE removes. I also learned how to use ObjectId and how to handle both \"not found\" (404) and server errors (500) properly.",
+      "author": "6ad612a2e6032adc1c2dbb06",
+      "createdAt": "2026-10-20T00:46:12.946Z",
+      "updatedAt": "2026-10-20T00:46:12.946Z",
+      "__v": 0
+    },
+    {
+      "_id": "6ad6b9d5157b5720864ef7ea",
+      "title": "Organising Code with Mongoose and the MVC Pattern (Lab 9–12)",
+      "content": "In Labs 9 to 12 my code was refactored. Earlier, everything was written in one big server.js file. These labs introduced Mongoose models, controllers and a central error handler.\n\nKey points I learned:\n\n1. Mongoose lets us define a Schema. For a Post, the title and content are required, and timestamps: true automatically adds created and updated times.\n\n2. A Mongoose Model is created from the schema, and methods like Post.create(), Post.find() and Post.findByIdAndUpdate() are then used in the code.\n\n3. The code was split into routes, controllers and models. Routes only decide which controller runs; controllers contain the logic; models define the data. This is the MVC idea and it makes each file short and easy to manage.\n\n4. findByIdAndUpdate(..., { new: true, runValidators: true }) returns the updated document and still validates the new data.\n\n5. Instead of handling errors everywhere, errors are passed with next(error) to one central error-handling middleware, which always sends JSON in the same format.\n\nSummary\nThese labs taught me how to structure a back-end application in the MVC style, how Mongoose schemas and models work, and how a central error handler keeps responses consistent. The project became much more organised than a single server.js file.",
+      "author": "6ad612a2e6032adc1c2dbb06",
+      "createdAt": "2026-10-20T00:46:13.217Z",
+      "updatedAt": "2026-10-20T00:46:13.217Z",
+      "__v": 0
+    },
+    {
+      "_id": "6ad6b9d5157b5720864ef7ed",
+      "title": "Password Security with bcrypt and JWT (Lab 14)",
+      "content": "In Lab 14 I added user registration and login. This was the most security-focused lab, because passwords must never be stored in plain text.\n\nKey points I learned:\n\n1. On registration, the password is hashed automatically using a pre-save Mongoose hook. bcrypt.genSalt() creates a salt and bcrypt.hash() turns the password into a long string that cannot be read back.\n\n2. On login, bcrypt.compare() checks the entered password against the stored hash using a method called matchPassword. We never see the real password.\n\n3. When login succeeds, a JSON Web Token (JWT) is generated with jwt.sign(). The token contains the user's id and is sent back to the client.\n\n4. The client stores the token and sends it in the Authorization header when it requests protected routes, so the server can identify the user without asking for the password again.\n\n5. A duplicate email returns a 400 error, and wrong login details return a generic 401 \"Invalid email or password\" message.\n\nSummary\nThis lab showed me how authentication works end to end: bcrypt hashes passwords before saving, bcrypt.compare verifies them on login, and JWT issues a token that identifies the user for protected routes. I also learned why central error handling is important for returning clear, consistent messages.",
+      "author": "6ad612a2e6032adc1c2dbb06",
+      "createdAt": "2026-10-20T00:46:13.457Z",
+      "updatedAt": "2026-10-20T00:46:13.457Z",
+      "__v": 0
+    }
+  ],
+  "comments": [],
+  "messages": [
+    {
+      "_id": "6ad60dfbb54cf05a89d8e68a",
+      "name": "Tester",
+      "email": "t@t.com",
+      "message": "hello from test",
+      "createdAt": "2026-10-19T12:32:59.549Z",
+      "updatedAt": "2026-10-19T12:32:59.549Z",
+      "__v": 0
+    }
+  ]
+}
